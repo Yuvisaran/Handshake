@@ -1,0 +1,15 @@
+@import "_app.scss";
+@import "_variables.scss";
+@import "_global.scss";
+@import "_project.scss";
+@import "_splash.scss";
+@import "_addproperty.scss";
+@import "_contact.scss";
+@import "_dashboard.scss";
+@import "_buyproperty.scss";
+@import "_staticstyles.scss";
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale !important;
+  overflow-x:hidden; 
+}

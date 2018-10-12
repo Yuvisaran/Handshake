@@ -1,0 +1,96 @@
+.contact_container {
+    max-width: 770px;
+    width: 100%;
+    padding: 50px 0;
+    .contact_box {
+        padding: 47px 50px;
+        border-radius: 2px;
+        min-height: 500px;
+        &.contact_leftbox {
+            background: rgba(0, 0, 0, 0.4);
+            .contact_header {
+                color: #FFFFFF;
+                font-family: $hind-bold;
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 8px;
+            }
+            .contact_text {
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 20px;
+                font-family: $robo-reg;
+            }
+            .contact_communication {
+                margin-top: 35px;
+                width: 100%;
+                td {
+                    vertical-align: top;
+                    color: #FFFFFF;
+                    font-family: $robo-black;
+                    font-size: 14px;
+                    line-height: 25px;
+                    & + td {
+                        padding-left: 10px;
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &.contact_rightbox {
+            background: #ffffff;
+            padding: 40px 50px;
+            .personal_info_edit input {
+                width: 100%;
+                padding: 10px 13px;
+                &:focus {
+                    outline: none;
+                    color: #726DA8;
+                }
+            }
+            .custom_modal .custom_modal_body {
+                height: auto;
+                .custom_modal_header {
+                    font-weight: normal;
+                    margin-top: 0;
+                }
+                .custom_modal_text {
+                    font-weight: normal;
+                }
+            }
+            .personal_info_edit textarea {
+                resize: none;
+                height: 170px;
+                margin-bottom: 25px;
+                font-size: 13px;
+                padding: 10px 13px;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                    color: #726DA8;
+                    border: 1px solid #e4e4e4;
+                }
+            }
+            .personal_info_edit .has_error textarea {
+                border: 1px solid #C47D7D;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .contact_container .contact_box, .contact_container .contact_box.contact_rightbox {
+        min-height: 1px;
+        padding: 25px 35px;
+    }
+    .contact_container .contact_box.contact_leftbox {
+        margin-bottom: 15px;
+    }
+
+}
+@media (max-width: 414px){
+    .contact_container .contact_box.contact_leftbox .contact_communication td + td a{
+            word-break: break-all;
+    }
+}

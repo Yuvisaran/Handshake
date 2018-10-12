@@ -1,0 +1,506 @@
+#enterHcode{
+    .H_CodeBox {
+        min-width: 770px;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        p{
+            font-weight: 500;
+        }
+    }
+    .buyproperty_hcode{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 30px 0px 35px 0px;
+        input{
+            height: 82px;
+            width: 82px;
+            border: 1px solid #F4F4F4;
+            border-radius: 2px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+            font-family:'Hind', sans-serif;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 60px;
+            padding: 13px 30px;
+            margin-right: 18px;
+            color: #726DA8;
+            &:focus{
+                box-shadow: 0 2px 4px 0 rgba(114,109,168,0.3);
+            }
+            .hocodegroup{
+                padding:0 !important;
+                position: relative;    
+                label{
+                    position: absolute;
+                    left:0;
+                    bottom:0;
+                    font-size: 12px;
+                }
+            }
+        
+        }
+        span{
+            margin-left: 3px;
+            margin-right: 22px;
+            color: #726DA8;
+            font-family: 'Hind', sans-serif;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .H_CodeBox button.copy_clip_button{
+        margin-bottom: 15px;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+   .validation_info{
+        color: #C47D7D;
+        background-color: transparent;
+        bottom: 0px;
+        left: 50px;
+    }
+    .validation_info:after{
+        display: none;
+    }
+}
+
+
+
+
+
+.property_address_view_buyer_padding{
+    padding: 8px 0 32px 0;
+}
+.top-hcode{
+    padding-top: 5px;
+    margin-bottom: 0px;
+    color: #585058;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+.property_address_view_buyer{
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    h4{
+        color: #585058;
+        font-family: 'Hind', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 35px;
+        margin-bottom: 0px;
+    }
+    .address_text{
+        color: #585058;
+        font-family: 'Hind', sans-serif;
+        font-size: 14px;
+        line-height: 11px;
+        margin-bottom: 0px;
+    }
+}
+.property_details_view{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    div{
+        padding: 0 25px;
+        border-right: 1px dashed rgba(151, 151, 151, 0.5);
+        text-align: center;
+        p{
+            color: #585058;
+            font-family: 'Hind', sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 28px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        span{
+            color: #585058;
+            font-family: 'Hind', sans-serif;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+        }
+    }
+}
+.property_address_view_button{
+    button:nth-child(2){
+        height: 35px;
+        width: 170px;
+        border-radius: 2px;
+        background-color: #726DA8;
+        border: none;
+        margin-top: 5px;
+        color: #FFFFFF;
+        font-family: 'Hind', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+.property_View_head{
+    color: #585058;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+.property_detail_points{
+    padding: 60px 0 40px 0;
+}
+.property_View_items_details{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    p{
+        margin-bottom:0px;
+        font-weight: 700;
+        line-height: 25px;
+        color: #7d8cc4;
+    }
+    span{
+        color: #585058;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+.property_View_internal_detail{
+    padding: 0 25px;
+    border-right: 1px dashed rgba(151, 151, 151, 0.5);
+    max-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p{
+        color: #585058;
+        font-family: 'Hind', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 28px;
+         text-align: center;
+         margin-bottom: 0px;
+    }
+    span{
+        color: #585058;
+        font-family: 'Hind', sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+.property_View_included_items ul, .property_View_excluded_items ul{
+    list-style: none;
+    width: 50%;
+    padding-left: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    color: #585058;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.property_View_included_items ul li:before{
+    background: url("../images/check-mark.png") center;
+    content: '';
+    height: 8px;
+    width: 12px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 9px;
+}
+.property_View_excluded_items ul li:before{
+    background: url("../images/close-bullet@3x.png") center;
+    content: '';
+    height: 8px;
+    width: 12px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 9px;
+}
+.property_View_price{
+    padding: 12px;
+    border-radius: 2px;
+    background-color: rgba(85, 145, 127, 0.06);
+    .list_price{
+        border-right: 1px dashed rgba(151, 151, 151, 0.5);
+        max-height: 60px;
+        align-self: center;
+        p{
+            color: #585058;
+            font-family: 'Hind', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        span{
+            color: #55917F;
+            font-family: 'Hind', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+    }
+    .estimate_price{
+        max-height: 60px;
+        align-self: center;
+            p{
+                color: #585058;
+                font-family: 'Hind', sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 18px;
+                text-align: center;
+                margin-bottom: 0px;
+            }
+            span{
+                color: rgba(88, 80, 88, 0.4);
+                font-family: 'Hind', sans-serif;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 42px;
+                text-align: center;
+            }
+        }
+}
+.property_View_footer_note{
+    color: #585058;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.property_View_footer_buttons{
+    button:first-child{
+        height: 35px;
+        width: 171px;
+        border: 1px solid #6BAB90;
+        border-radius: 2px;
+        margin-bottom: 5px;
+        color: #55917F;
+        font-family:'Hind', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        background-color: transparent;
+    }
+    button:last-child{
+         width: 170px;
+         height: 35px;
+         border-radius: 2px;
+         background-color: #55917F;
+         border: none;
+         color: #FFFFFF;
+         font-family:'Hind', sans-serif;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: center;
+     }
+}
+.thumbnail-slider{
+    display: flex;
+    .sliderbig{
+        
+         width: 60%;
+        position: relative;
+ 
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 450px; 
+        }
+        .slideLeftarrow{
+            width: 45px;
+            height: 45px;
+            background: #000000a1;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            padding: 8px;
+            img{
+                width: 65%;
+                height: auto;
+                margin: auto;
+            }
+        }
+        .slideRightarrow{
+            width: 45px;
+            height: 45px;
+            background: #000000a1;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            padding: 8px;
+            img{
+                width: 65%;
+                height: auto;
+                margin: auto;
+            }
+        }
+    }
+    .slidersmall{
+        position: relative;
+        width:40%;
+        ul{
+            list-style-type: none;
+            li{
+                display: inline-block;
+            }
+        }
+        .slideDownarrow{
+            width: 100%;
+            height: 45px;
+            background: #000000a1;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            padding: 8px;
+            img{
+                width: 20px;
+                height: auto;
+                margin: auto;
+            }
+        }
+    }
+}
+.mrigt{margin-right: 0 !important;}
+#enterHcode .buyproperty_hcode input{padding: 0; text-align: center;}
+#enterHcode .buyproperty_hcode input.blue{border:1px solid blue !important;}
+#enterHcode .buyproperty_hcode input.red{border:1px solid #ff0000 !important;}
+#enterHcode .buyproperty_hcode span{color: #ff0000; font-size: 13px; line-height: 20px; margin-right: 0px;}
+
+@media screen and (max-width: 1024px){
+    .property_address_view_buyer h4{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .property_details_view div{
+        padding: 0 10px;
+        p{
+           font-size: 20px;
+           line-height: 20px;
+        }
+        span{
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    #enterHcode .H_CodeBox{
+        min-width: auto;
+    }
+     .property_address_view_buyer h4{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .property_details_view div{
+        padding: 0 10px;
+        p{
+           font-size: 20px;
+           line-height: 20px;
+        }
+        span{
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 667px){
+   #enterHcode .buyproperty_hcode input{
+       height: 60px;
+       width: 60px;
+       font-size: 20px;
+       text-align: center;
+       padding: 5px;
+    }
+    .property_address_view_button{
+        button{
+            width: 130px !important;
+        }
+    }
+}
+@media screen and (max-width: 568px){
+    .property_address_view_buyer{
+        margin-bottom: 10px;
+    }
+    .property_address_view_button{
+        flex-direction: row;
+        display: flex;
+        button{
+            margin-top: 10px !important;
+            margin-right: 5px;
+        }
+    }
+    .property_detail_points .responsive_property_type_details{
+        justify-content: flex-start !important;
+        margin-top: 10px;
+    }
+    .property_detail_points .responsive_property_type{
+        flex-direction: column !important;
+    }
+    .property_View_price .list_price{
+        border: none;
+        margin-bottom: 10px;
+    }
+    .property_View_price .estimate_price{
+        margin-bottom: 10px;
+    }
+    .property_View_footer_buttons {
+        align-items: center !important;
+        button{
+            width: 100% !important;
+        }
+    }
+}
+@media screen and (max-width: 414px){
+   #enterHcode .buyproperty_hcode{
+       display: inline-block;
+    }
+    #enterHcode .buyproperty_hcode span{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 320px){
+    .property_detail_points .info_tooltip_prop_ex_in.property_custom_tooltip{
+        right: -29px;
+    }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* Dropdown Rotate */
+.droprotate {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }

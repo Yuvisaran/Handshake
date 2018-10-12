@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto-Black.svg#Roboto-Black") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url("../fonts/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-LightItalic.woff") format("woff"), url("../fonts/Roboto-LightItalic.ttf") format("truetype"), url("../fonts/Roboto-LightItalic.svg#Roboto-LightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Hind-Medium';
+  src: url("../fonts/Hind-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Hind-Medium.woff") format("woff"), url("../fonts/Hind-Medium.ttf") format("truetype"), url("../fonts/Hind-Medium.svg#Hind-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Hind-Bold';
+  src: url("../fonts/Hind-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Hind-Bold.woff") format("woff"), url("../fonts/Hind-Bold.ttf") format("truetype"), url("../fonts/Hind-Bold.svg#Hind-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.height60 {
+  height: 60px; }
+
+.bg-violet {
+  background-color: #594157; }
+

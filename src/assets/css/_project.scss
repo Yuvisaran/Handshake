@@ -1,0 +1,990 @@
+%h1css {
+  font-family: $hind-bold;
+  font-size: 24px;
+  color: $forth-clr;
+}
+%h2css {
+  font-family: $hind-bold;
+  font-size: 18px;
+  color: $forth-clr;
+}
+%h3css {
+  font-family: $hind-bold;
+  font-size: 18px;
+  color: $forth-clr;
+  line-height: 20px;
+}
+%paracss {
+  font-family: $robo-reg;
+  font-size: 13px;
+  color: $forth-clr;
+  line-height: 20px;
+}
+%subcss {
+  font-family: $robo-lighItalic;
+  font-size: 13px;
+  color: $forth-clr;
+  line-height: 20px;
+}
+a {
+  color: #726ca8;
+}
+.underline {
+  text-decoration: underline;
+}
+.login_bg {
+  background: url("../images/login_bg.png") center center no-repeat;
+  background-size: cover;
+}
+.errorContainer {
+  background:#C47D7D;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 12px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px;
+  z-index: 999;
+}
+.successContainer {
+  background: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 12px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px;
+  z-index: 999;
+}
+.info-box {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  position: relative;
+  .close-ico {
+    color: #ffffff;
+    font-size: 17px;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    top: 0px;
+  }
+}
+.loginBox {
+  max-width: 770px;
+  min-height: 317px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+  .nav.nav-tabs {
+    border: none;
+    li {
+      width: 50%;
+      background-color: #f6f5f6;
+      padding: 19px 0;
+      border-top: 2px solid #888888;
+      &:hover {
+        cursor: pointer;
+      }
+      a {
+        color: $forth-clr;
+        font-size: 14px;
+        font-family: 'Hind', sans-serif;
+        font-weight: 500;
+        opacity: 0.56;
+        text-align: center;
+        border: none;
+        padding: 0px;
+      }
+      &.active {
+        background-color: rgba(246, 245, 246, 0.4);
+        border-top: 2px solid #726DA8;
+      }
+      & a.active {
+        color: #726DA8;
+        opacity: 1;
+        background-color: inherit;
+      }
+    }
+  }
+}
+.loginBox .nav.nav-tabs li.active a{
+  color: #726DA8;
+  opacity: 1;
+  background-color: transparent;
+  font-weight: 600;
+}
+.signin_form {
+  padding: 50px 200px;
+  .login_input_box {
+    input {
+      width: 370px;
+      height: 42px;
+      border-radius: 2px;
+      border: 1px solid #e4e4e4;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      font-family: 'Hind', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #837C82;
+    }
+    label {
+      a {
+        color: #746cac;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 20px;
+        text-decoration: none;
+        vertical-align: top;
+      }
+    }
+  }
+  .signin_btn {
+    p {
+      color: #585058;
+      font-size: 11px;
+      line-height: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 5px;
+      a {
+        color: #746cac;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.form-control.half_input:disabled, .form-control.half_input[readonly] {
+  background: #fff;
+}
+.crtAcc_form {
+  padding: 50px 100px;
+  input {
+    height: 42px;
+    border-radius: 2px;
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #837C82;
+  }
+  .birthdate_input {
+    display: inline-flex;
+    position: relative;
+    input {
+      padding-right: 30px;
+      &:read-only {
+        background-color: #ffffff;
+      }
+    }
+    .info_icon {
+      position: absolute;
+      top: 14px;
+      right: 13px;
+      height: 14px;
+      width: 14px;
+      background: url("../images/info.png");
+      cursor: pointer;
+      background-size: cover;
+    }
+    .info_tooltip {
+      position: absolute;
+      border-radius: 2px;
+      background-color: #726da8;
+      color: #ffffff;
+      font-family: 'Hind', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      padding: 6px 12px;
+      bottom: 90%;
+      width: 335px;
+      height: 48px;
+      right: 0px;
+      a {
+        color: #fff;
+      }
+      &:after {
+        top: 100%;
+        right: 15px;
+        border: solid transparent;
+        content: " ";
+        height: 12px;
+        width: 12px;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(114, 108, 168, 0);
+        border-top-color: #726ca8;
+        border-width: 6px;
+      }
+    }
+  }
+  .half_input {
+    width: 280px;
+    display: inline-flex;
+  }
+  .full_input {
+    width: 570px;
+    display: inline-flex;
+  }
+}
+.custom_login_btn {
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #726ca8;
+  color: #ffffff;
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+.validation_info {
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  display: flex;
+  position: absolute;
+  bottom: -33px;
+  width: 100%;
+  background-color: #c47d7d;
+  padding: 10px;
+}
+.validation_info:after {
+  top: -12px;
+  left: 18px;
+ border: solid transparent;
+ content: " ";
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(196, 125, 125, 0);
+  border-top-color: #c47d7d;
+  border-width: 6px;
+  transform: rotate(180deg);
+}
+.validation_settings_info {
+  color: #C47D7D;
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  display: inline-flex;
+  margin-left: 20px;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+}
+
+.loginBox.forget_pass_box {
+  min-height: 317px;
+}
+.forgetpass_header {
+  border-radius: 2px 2px 0 0;
+  background-color: rgba(246, 245, 246, 0.4);
+  padding: 22px 0;
+  border-top: 2px solid #726DA8;
+  h2 {
+    color: #726da8;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+.forgotpass_input_box {
+  padding: 50px 200px;
+  .forgetpass_text {
+    color: #585058;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 55px;
+  }
+  input {
+    width: 370px;
+    height: 42px;
+    border-radius: 2px;
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+.tos_box {
+  padding: 50px 100px 0 100px;
+  h4,
+  h5 {
+    color: #585058;
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  p {
+    color: #585058;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  h5 + p {
+    margin-bottom: 20px;
+  }
+}
+.tos_confirm_box{
+  border-radius: 2px;
+  background-color: rgba(114, 109, 168, 0.1);
+  padding: 14px;
+  margin-bottom: 10px;
+}
+.tos_confirm {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #585058;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+.tos_confirm input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.tos_confirm input:checked ~ .checkmark {
+  background-color: #55917f;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.tos_confirm input:checked ~ .checkmark:after {
+  display: flex;
+}
+.checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 7px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.tos_btn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  button {
+    width: 100%;
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  .btn_blue {
+    height: 35px;
+    border-radius: 2px;
+    background-color: #726ca8;
+    color: #ffffff;
+  }
+  .btn_white {
+    height: 35px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #837c82;
+    font-weight: 500;
+    font-family: 'Hind', sans-serif;
+  }
+}
+
+/**********************************
+*** Settings css starts
+***********************************/
+.setting-box {
+  max-width: 970px;
+  min-height: 600px;
+  margin: 60px auto;
+  float: none;
+  .settings_menu {
+    padding: 40px 20px;
+    color: #ffffff;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #584157;
+    height: 100%;
+    h4 {
+      font-size: 20px;
+    }
+    .settings_submenu {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      line-height: 39px;
+      padding-left: 20px;
+      width: 100%;
+      margin-bottom: 0px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .active {
+      color: #644a61;
+      border-radius: 2px;
+      background-color: #f6f5f6;
+      padding-bottom: 10px;
+      height: 40px;
+    }
+    .active:hover {
+      color: #644a61;
+    }
+  }
+  .settings_info {
+    background-color: #ffffff;
+    padding: 50px 100px 25px 100px;
+    height: 100%;
+  }
+}
+.personal_info_head {
+  display: flex;
+  margin-bottom: 35px;
+  h4 {
+    margin-bottom: 0px;
+    color: #585058;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+  }
+  button {
+    color: #585058;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+    height: 21px;
+    float: right;
+    border: none;
+    padding: 3px 0px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
+
+.personal_info_label,
+.personal_info_data {
+  color: #585058;
+  font-size: 14px;
+  line-height: 20px;
+}
+.personal_info_label {
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 15px;
+  display: inline-flex;
+}
+.personal_info_data {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.personal_info_box {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 15px;
+}
+.personal_info_edit {
+  input {
+    color: #837c82;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    width: 370px;
+    height: 42px;
+    border-radius: 2px;
+    &.form-control.pi_input {
+      border: 1px solid #e4e4e4;
+    }
+    &.form-control.pi_input_custom {
+      border: 1px solid rgba(228, 228, 228, 0.2);
+      &:disabled{
+        background-color: #fff
+      }
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  button {
+    height: 35px;
+    border-radius: 2px;
+    background-color: #726ca8;
+    color: #ffffff;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 0;
+    width: 100%;
+    max-width: 370px;
+    border: none;
+    cursor: pointer;
+    &:disabled{
+      cursor: not-allowed;
+    }
+  }
+}
+.personal_info_head.mb-35 {
+  margin-bottom: 35px;
+}
+.profile_pic_box {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: inline-flex;
+}
+.profile_photo_setting {
+  padding: 10px 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 14px;
+  height: 120px;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  background-color: rgba(246, 245, 246, 0.1);
+  display: flex;
+}
+.picture_set {
+  width: 120px;
+  height: 120px;
+  border-radius: 35px;
+  background-color: #d7d7d7;
+  position: relative;
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 35px;
+  }
+}
+.picture_set.pos_relative{
+  background: transparent;
+}
+.profile_pic_btn {
+  button {
+    width: 120px;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: none;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #726da8;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    z-index: 999;
+  }
+  label{
+    width: 120px;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: #726ca8;
+    color: #ffffff;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+.profile_pic_save {
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #726ca8;
+  color: #ffffff;
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  max-width: 270px;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+button:disabled{
+  cursor: no-drop;
+}
+/**********************************
+*** Signup process modal css starts
+***********************************/
+.custom_modal {
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  .custom_modal_body {
+    width: 90%;
+    max-width: 670px;
+    height: 225px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: 4px solid #ffffff;
+    background-color: #f6f5f6;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .custom_modal_content {
+      align-self: center;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      color: #585058;
+    }
+    .custom_modal_header {
+      font-family: 'Hind', sans-serif;
+      font-size: 18px;
+      line-height: 27px;
+      margin: 25px 0 10px;
+      font-weight: 500;
+    }
+    .custom_modal_text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+    .close-ico {
+      width: 11px;
+      height: 34px;
+      transform: rotate(45deg);
+      opacity: 0.5;
+      color: #585058;
+      font-size: 24px;
+      font-weight: 300;
+      position: absolute;
+      right: 20px;
+      top: 2px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.mid-sction-settings{
+  min-height: calc(100vh - 120px);
+  flex-direction: column;
+  display: flex;
+}
+#edit_profile_pic_settigs{
+  opacity: 0;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.has_error input{
+  border: 1px solid #C47D7D !important;
+}
+.birthdate_input.has_error{
+  display: flex;
+  flex-direction: column;
+  .react-datepicker-wrapper{
+    margin-top: 0px;
+  }
+}
+.mid-sction-settings .form-group{
+  width: 370px;
+  position: relative;
+}
+.profile_detail_responsive{
+  display: none;
+}
+.fgrow1{
+  flex-grow: 1;
+}
+.crtAcc_form .validation_info {
+  bottom: -23px;
+}
+
+
+//Media Query
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .forgotpass_input_box input {
+    width: 100%;
+  }
+  .birthdate_input {
+    width: 100%;
+  }
+  .crtAcc_form{
+    padding: 50px 80px;
+  }
+  .signin_form{
+    padding: 50px 180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .loginBox,
+  .loginBox.forget_pass_box {
+    max-width: 100%;
+    min-width: 365px;
+  }
+  .loginBox.forget_pass_box,
+  .loginBox.reset_password_box {
+    min-height: 100%;
+  }
+  .loginBox.reset_password_box {
+    min-width: 80%;
+  }
+  .signin_form .login_input_box input,
+  .crtAcc_form .half_input,
+  .crtAcc_form .full_input,
+  .forgotpass_input_box input {
+    width: 100%;
+  }
+  .signin_form,
+  .crtAcc_form,
+  .forgotpass_input_box {
+    padding: 20px 15px;
+  }
+  .login_bg.mid-sction {
+    padding: 20px;
+  }
+  .forgotpass_input_box .forgetpass_text {
+    padding: 0;
+  }
+  .birthdate_input {
+    width: 100%;
+  }
+  .birthdate_input > div {
+    width: 100%;
+  }
+  .setting-box .settings_info {
+    padding: 20px;
+  }
+  .profile_photo_setting {
+    height: auto;
+  }
+  .responsive_display_column{
+   flex-direction: column !important;
+  }
+  .react-datepicker-wrapper{
+    width: 100%;
+    .react-datepicker__input-container{
+      width: 100%;
+    }
+  }
+  .react-datepicker-popper{
+    max-width: 243px !important;
+  }
+  .nav-item.profile_pic_li.show{
+    position: relative;
+  }
+  .dropdown-menu.custom_header_dropdown{
+    padding: 5px;
+    right: 3px;
+    margin-top: 25px;
+  }
+  .mid-sction-settings{
+    padding: 0px;
+    >.container{
+      padding: 0px;
+    }
+    .form-group{
+      margin: 0 auto;
+      float: none;
+      width: 100%;
+    }
+    .profile_pic_save {
+      display: block;
+      margin: 0 auto;
+    }
+    .setting-box{
+      min-height: 1px;
+      margin: 20px 0;
+      .settings_menu{
+        padding: 20px;
+        height: auto;
+        .settings_submenu{
+          flex-direction: row;
+          a{
+            padding: 5px 0;
+            text-align: center;
+            height: auto;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            word-break: break-word;
+            align-items: center;
+            &.edit_profile_custom_responsive{
+                display: flex;
+                justify-content: center;
+                span{
+                  margin-left: 0px;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+  .profile_detail_responsive{
+    display: flex;
+    margin-right: 30px;
+    ul{
+      list-style: none;
+      flex-direction: row;
+      display: flex;
+      margin-bottom: 0px;
+      padding-left: 0;
+    }
+  }
+  .display_responsive_hidden{
+    display: none;
+  }
+  .personal_info_box{
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .personal_info_responsive_view{
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    p{
+      display: flex;
+    }
+  }
+  .personal_info_edit button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .profile_pic_btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile_pic_box {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .loginBox,
+  .loginBox.forget_pass_box,
+  .loginBox.reset_password_box {
+    min-width: 100%;
+  }
+  .tos_box {
+    padding: 20px 20px 0 20px;
+  }
+  .setting-box .settings_info {
+    padding: 20px;
+  }
+  .personal_info_edit input {
+    width: 100%;
+  }
+}
+@media (max-width: 414px){
+
+}
+
+@media (max-width: 407px) {
+  .crtAcc_form .birthdate_input .info_tooltip {
+    width: 285px;
+    height: 60px;
+  }
+  .profile_pic_box {
+    display: flex;
+    flex-direction: column;
+    .picture_set {
+      margin: 0 auto;
+    }
+  }
+  .profile_pic_box .profile_pic_btn.my-auto {
+    margin-top: 15px !important;
+    button {
+      margin-left: 0px;
+    }
+  }
+  .personal_info_head,
+  .profile_pic_box {
+    text-align: center;
+  }
+  .profile_pic_btn label{
+    margin-left: 0px;
+  }
+  .custom_modal .custom_modal_body{
+    height: 265px;
+  }
+}
+
